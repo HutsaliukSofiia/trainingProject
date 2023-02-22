@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb49bd5b-fcaa-4187-a862-a9bc5a83c2cf" name="Changes" comment="Create new SObject: Boutique Resource">
-      <change afterPath="$PROJECT_DIR$/classes/BoutiqueResourceService.cls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/BoutiqueResourceService.cls-meta.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/triggers/BoutiqueResourceTrigger.trigger" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/triggers/BoutiqueResourceTrigger.trigger-meta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/trainingProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trainingProject.iml" afterDir="false" />
+    <list default="true" id="cb49bd5b-fcaa-4187-a862-a9bc5a83c2cf" name="Changes" comment="Populate Boutique Resource Name based on RecType">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlluminatedCloud/New_Connection/OfflineSymbolTable.zip" beforeDir="false" afterPath="$PROJECT_DIR$/IlluminatedCloud/New_Connection/OfflineSymbolTable.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/BoutiqueResourceService.cls" beforeDir="false" afterPath="$PROJECT_DIR$/classes/BoutiqueResourceService.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/triggers/BoutiqueResourceTrigger.trigger" beforeDir="false" afterPath="$PROJECT_DIR$/triggers/BoutiqueResourceTrigger.trigger" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +67,8 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="APEXCLASS:BOUTIQUERESOURCESERVICE" value="1677068124219" />
-                      <entry key="APEXTRIGGER:BOUTIQUERESOURCETRIGGER" value="1677068077000" />
+                      <entry key="APEXCLASS:BOUTIQUERESOURCESERVICE" value="1677069079594" />
+                      <entry key="APEXTRIGGER:BOUTIQUERESOURCETRIGGER" value="1677069085611" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -149,7 +145,7 @@
       <workItem from="1677060217672" duration="3075000" />
       <workItem from="1677065279304" duration="580000" />
       <workItem from="1677065880569" duration="127000" />
-      <workItem from="1677066012266" duration="2169000" />
+      <workItem from="1677066012266" duration="3353000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1677056862036</created>
@@ -179,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677063641454</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Populate Boutique Resource Name based on RecType">
+      <created>1677068340024</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677068340024</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +194,11 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -213,6 +221,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Create Global Value Sets for picklists" />
     <MESSAGE value="Create new SObject: Boutique Resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create new SObject: Boutique Resource" />
+    <MESSAGE value="Populate Boutique Resource Name based on RecType" />
+    <option name="LAST_COMMIT_MESSAGE" value="Populate Boutique Resource Name based on RecType" />
   </component>
 </project>
