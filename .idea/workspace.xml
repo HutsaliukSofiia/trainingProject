@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb49bd5b-fcaa-4187-a862-a9bc5a83c2cf" name="Changes" comment="Populate Boutique Resource Name based on RecType">
+    <list default="true" id="cb49bd5b-fcaa-4187-a862-a9bc5a83c2cf" name="Changes" comment="Populate Boutique Resource Name based on RecType (fixed)">
+      <change afterPath="$PROJECT_DIR$/classes/ContactTriggerHandler.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/ContactTriggerHandler.cls-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/triggers/ContactTrigger.trigger" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/triggers/ContactTrigger.trigger-meta.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/trainingProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trainingProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/BoutiqueResourceService.cls" beforeDir="false" afterPath="$PROJECT_DIR$/classes/BoutiqueResourceService.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/BoutiqueResourceService.cls" beforeDir="false" afterPath="$PROJECT_DIR$/classes/BoutiqueResourceTriggerHandler.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/BoutiqueResourceService.cls-meta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/BoutiqueResourceTriggerHandler.cls-meta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/triggers/BoutiqueResourceTrigger.trigger" beforeDir="false" afterPath="$PROJECT_DIR$/triggers/BoutiqueResourceTrigger.trigger" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,13 +38,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="01ec1b60-0048-458a-8e73-3083581711c8" />
+        <option name="url" value="https://github.com/HutsaliukSofiia/trainingProject.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="moduleWorkspaceSettings">
       <map>
         <entry key="trainingProject">
           <value>
             <ModuleWorkspaceSettings>
-              <option name="moduleContentsLastModified" value="1677065820705" />
+              <option name="moduleContentsLastModified" value="1677070112377" />
             </ModuleWorkspaceSettings>
           </value>
         </entry>
@@ -52,7 +71,7 @@
               <list>
                 <AnonymousApexSavedDocument>
                   <option name="apexLogLevel" value="FINEST" />
-                  <option name="body" value="System.debug(BoutiqueResourceService.GetRecordTypes());" />
+                  <option name="body" value="" />
                   <option name="name" value="Anonymous Apex 1" />
                 </AnonymousApexSavedDocument>
               </list>
@@ -67,8 +86,10 @@
                 <ConnectionWorkspaceSettings>
                   <option name="buildSuccessDatesBySourceRootRelativePath">
                     <map>
-                      <entry key="APEXCLASS:BOUTIQUERESOURCESERVICE" value="1677069079594" />
-                      <entry key="APEXTRIGGER:BOUTIQUERESOURCETRIGGER" value="1677069085611" />
+                      <entry key="APEXCLASS:BOUTIQUERESOURCETRIGGERHANDLER" value="1677071870934" />
+                      <entry key="APEXCLASS:CONTACTTRIGGERHANDLER" value="1677072456986" />
+                      <entry key="APEXTRIGGER:BOUTIQUERESOURCETRIGGER" value="1677071571907" />
+                      <entry key="APEXTRIGGER:CONTACTTRIGGER" value="1677071368671" />
                     </map>
                   </option>
                   <option name="lastBuildScope" value="CONTEXT" />
@@ -145,7 +166,7 @@
       <workItem from="1677060217672" duration="3075000" />
       <workItem from="1677065279304" duration="580000" />
       <workItem from="1677065880569" duration="127000" />
-      <workItem from="1677066012266" duration="3353000" />
+      <workItem from="1677066012266" duration="6402000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1677056862036</created>
@@ -182,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677068340024</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Populate Boutique Resource Name based on RecType (fixed)">
+      <created>1677069616209</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677069616209</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +250,7 @@
     <MESSAGE value="Create Global Value Sets for picklists" />
     <MESSAGE value="Create new SObject: Boutique Resource" />
     <MESSAGE value="Populate Boutique Resource Name based on RecType" />
-    <option name="LAST_COMMIT_MESSAGE" value="Populate Boutique Resource Name based on RecType" />
+    <MESSAGE value="Populate Boutique Resource Name based on RecType (fixed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Populate Boutique Resource Name based on RecType (fixed)" />
   </component>
 </project>
