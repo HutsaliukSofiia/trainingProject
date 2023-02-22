@@ -1,9 +1,19 @@
 public with sharing class BoutiqueResourceTriggerHandler {
     public static void UpdateNames(List<Boutique_Resource__c> boutiques){
         Map<Id, String> recordTypesList = GetRecordTypes();
+
+        List<Id> ids = new List<Id>();
+        for(Boutique_Resource__c br: boutiques){
+            ids.add(br.Boutique__c);
+            ids.add(br.Contact__c);
+        }
+        Map<Id, Account> accs = new Map<Id, Account>([SELECT Id, Name FROM Account WHERE Id IN :ids]);
+        Map<Id, Contact> conts = new Map<Id, Contact>([SELECT Id, Name FROM Contact WHERE Id IN :ids]);
+
+
         for(Boutique_Resource__c br: boutiques){
             String rtName = recordTypesList.get(br.RecordTypeId);
-            br.Name=CreateName(br, rtName);
+            br.Name=CreateName(br, rtName, accs.get(br.Boutique__c).Name, conts.get(br.Contact__c).Name);
         }
     }
 
@@ -16,17 +26,17 @@ public with sharing class BoutiqueResourceTriggerHandler {
         return recordTypesList;
     }
 
-    public static String CreateName(Boutique_Resource__c br, String rtName){
+    public static String CreateName(Boutique_Resource__c br, String rtName, String accName, String contName){
         String name='';
         switch on rtName{
             when 'Location'{
-                name = '[' + br.Boutique__r.Name + '] ' + br.Location__c;
+                name = '[' + accName + '] ' + br.Location__c;
             }
             when 'Team Member'{
-                name = '[' + br.Boutique__r.Name + '] ' + br.Contact__r.Name;
+                name = '[' + accName + '] ' + contName;
             }
             when 'Purpose of Visit'{
-                name = '[' + br.Boutique__r.Name + '] Watches';
+                name = '[' + accName + '] Watches';
             }
         }
         return name;

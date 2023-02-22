@@ -8,7 +8,8 @@ public with sharing class ContactTriggerHandler {
             Boutique_Resource__c boutiqueResource= new Boutique_Resource__c(
                     RecordTypeId = recordTypeId,
                     Name='Name',
-                    Boutique__c = contact.AccountId
+                    Boutique__c = contact.AccountId,
+                    Contact__c = contact.Id
                     );
             newBoutiques.add(boutiqueResource);
         }
@@ -21,12 +22,12 @@ public with sharing class ContactTriggerHandler {
             contactIds.add(contact.Id);
         }
         List<Boutique_Resource__c> brs = [
-                SELECT Id, Name
+                SELECT Id, Name, Contact__c
                 FROM Boutique_Resource__c
                 WHERE Contact__c IN :contactIds
         ];
         for(Boutique_Resource__c br: brs){
-            br.Name=BoutiqueResourceTriggerHandler.CreateName(br, 'Team Member');
+            br.Name='ToUpdate';
         }
         update brs;
     }
