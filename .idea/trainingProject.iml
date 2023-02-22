@@ -17,6 +17,30 @@
                       <option name="entries">
                         <list>
                           <MetadataEntry>
+                            <option name="name" value="Boutique_Resource__cService" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
+                      <option name="name" value="ApexClass" />
+                      <option name="wildcard" value="false" />
+                    </MetadataType>
+                    <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
+                            <option name="name" value="Boutique_Resource__cTrigger" />
+                            <option name="selected" value="true" />
+                          </MetadataEntry>
+                        </list>
+                      </option>
+                      <option name="name" value="ApexTrigger" />
+                      <option name="wildcard" value="false" />
+                    </MetadataType>
+                    <MetadataType>
+                      <option name="entries">
+                        <list>
+                          <MetadataEntry>
                             <option name="name" value="Boutique_Resource__c.Boutique__c" />
                             <option name="selected" value="true" />
                           </MetadataEntry>
@@ -109,24 +133,7 @@
                       <option name="wildcard" value="false" />
                     </MetadataType>
                     <MetadataType>
-                      <option name="entries">
-                        <list>
-                          <MetadataEntry>
-                            <option name="name" value="Boutique_Resource__c.Location" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Boutique_Resource__c.Purpose_of_Visit" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                          <MetadataEntry>
-                            <option name="name" value="Boutique_Resource__c.Team_Member" />
-                            <option name="selected" value="true" />
-                          </MetadataEntry>
-                        </list>
-                      </option>
                       <option name="name" value="RecordType" />
-                      <option name="wildcard" value="false" />
                     </MetadataType>
                   </set>
                 </option>
