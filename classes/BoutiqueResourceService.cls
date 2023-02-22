@@ -18,7 +18,6 @@ public with sharing class BoutiqueResourceService {
                 }
             }
         }
-        update boutiques;
     }
 
     public static Map<Id, String> GetRecordTypes(){
